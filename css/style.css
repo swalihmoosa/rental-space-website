@@ -1,0 +1,335 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+	background: transparent;
+	font-weight: normal;
+	text-decoration: none;
+	outline: none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+ol, ul {
+	list-style: none;
+}
+del {
+	text-decoration: line-through;
+}
+body {
+	font-family: "Circular-Std-Regular", Arial, Helvetica, sans-serif;
+	font-size: 17px;
+	color: #1C2C40;
+	overflow-x: hidden;
+	min-width: 320px;
+	font-weight: 400;
+}
+input,textarea,select{
+	font-family: "Circular-Std-Regular", Arial, Helvetica, sans-serif;
+	font-weight: 400;
+}
+
+a{
+	color: #1C2C40;
+}
+a:hover,.submit:hover{
+	filter: alpha(opacity = 85);
+	-moz-opacity: 0.85;
+	-khtml-opacity: 0.85;
+	opacity: 0.85;
+}
+.thumb{
+	display: block;
+}
+.thumb img{
+	display: block;
+	width:100%;
+}
+p{
+	line-height:1.6em;
+	font-size: 16px;
+	font-family: "Circular-Std-Regular", Arial;
+	font-weight: 400;
+}
+.hidden{
+	display:none;
+}
+br.clear {
+	clear: both;
+	line-height: 0;
+}
+.wrapper {
+	width: 90%;
+	margin: 0 auto;
+	max-width:980px;
+}
+@font-face {
+	font-family: 'Circular-Std-Regular';
+	src:url('../fonts/CircularStd-Regular.woff2') format('woff2');
+	src:url('../fonts/CircularStd-Regular.woff') format('woff');
+	font-style: normal;
+}
+@font-face {
+    font-family: 'Circular-Std-Bold';
+    src: url("../fonts/CircularStd-Bold.woff2") format("woff2");
+    src: url("../fonts/CircularStd-Bold.woff") format("woff");
+    font-style: normal
+}
+::placeholder {
+  color:#D3CFCB;
+}
+header{
+	background-color: #FFF;
+	display: flex;
+	padding:20px 50px ;
+	padding-left: 100px;
+	justify-content: space-between;
+}
+header h1{
+	width: 10%;
+}
+header h1 a div.headleft{
+}
+header h1 a div.headleft img{
+	width: 100%;
+}
+header div.headright{
+	display: flex; 
+}
+header div.headright ul{
+	display: flex;
+	align-items: center;
+}
+header div.headright ul li{
+	padding-right: 22px;
+}
+header div.headright ul li:hover{
+border-bottom: 4px solid#54C5CA;
+}
+header div.headright ul li div.arrow{
+	display: flex;
+}
+header div.headright ul li div.arrow div.feature{
+}
+header div.headright ul li div.arrow div.arr{
+	margin-left: 8px;
+	width: 10px;
+}
+header div.headright ul li div.arrow div.arr img{
+	width: 100%;
+}
+header div.headright div.button{
+	background-color: #54C5CA;
+	margin-left: 0px;
+	display: flex;
+	align-items: center;
+	border-radius: 30px;
+	padding: 5px 30px;
+}
+header div.headright div.button div.left{
+	width: 12px;
+	margin-right: 6px;
+}
+header div.headright div.button div.left img{
+	width: 100%;
+}
+header div.headright div.button div.right{
+}
+header div.headright div.button  div.right a{
+	color: #FFF;
+	width: 100%;
+}
+section#middle{
+	background-image: url(../images/bg.jpg);
+	background-position: -1000px 0px;
+	width: 100%;
+	height: 90vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+section#middle div.top{
+}
+section#middle div.top h2{
+	font-size: 50px;
+	color: #FFF;
+	font-weight: 900;
+}
+section#middle div.top p{
+	display: flex;
+	justify-content: center;
+	font-size: 20px;
+	color: #FFF;
+	padding-bottom: 20px;
+}
+section#middle div.midb{
+	background: #D3D3D3;
+	display: flex;
+	width: 45%;
+	height: 15%;
+	justify-content: center;
+	align-items: center;
+	border-radius: 10px;
+}
+section#middle div.midb div.bottom{
+	background: #FFF;
+	display: flex;
+	width: 90%;
+	height: 60%;
+}
+section#middle div.midb div.bottom div {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	padding: 6px;
+	border-right: 1px solid #D3D3D3;
+}
+section#middle div.midb div.bottom div img{
+	width: 50%;
+}
+section#middle div.midb div.bottom form{
+	display: inline-block;
+	width: 95%;
+	display: flex;
+	justify-content: center;
+	justify-content: space-between;
+}
+section#middle div.midb div.bottom form input{
+	width: 90%;
+	margin-left: 5px;
+}
+section#middle div.midb div.bottom form button{
+	width: 30%;
+	background: #54C5CA;
+	color: #FFF;
+	font-size: 10px;
+	padding: 0px 7px;
+}
+section#middle div.midb div.bottom form button:hover{
+cursor: pointer;
+}
+@media all and (max-width: 1280px){
+	header{
+		display: flex;
+		justify-content: space-between;
+		font-size: 15px;
+	}
+}
+@media all and (max-width: 980px){
+header{
+	display: flex;
+	justify-content: space-between;
+	font-size: 12px;
+	padding: 20px 25px;
+	}
+header h1{
+		width: 15%;
+	}
+header div.headright{
+	display: flex;
+	justify-content: space-between;
+	width: 85%;
+	margin-left: 10px;
+}
+header div.headright ul{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+header div.headright ul li{
+	padding-right: 10px;
+}
+header div.headright div.button{
+	width: 37%;
+	}
+header div.headright div.button div.left{
+			margin-right: 6px;
+	}
+}
+@media all and (max-width: 768px){
+	header div.headright ul li{
+		display: none;
+	}
+	header div.headright div.button {
+    width: 50%;
+  }
+  section#middle div.top h2{
+  	font-size: 35px;
+  }
+  section#middle div.top p{
+    	font-size: 15px;
+    }
+  section#middle div.midb{
+  	width: 80%;
+  }
+}
+@media all and (max-width: 640px){
+header h1 a div.headleft {
+    width: 150px;
+}
+header div.headright div.button {
+    width: 100%;
+}
+	section#middle div.top h2{
+  	font-size: 29px;
+  }
+  section#middle div.top p{
+    	font-size: 14px;
+   }
+}
+@media all and (max-width: 480px){
+	header div.headright div.button {
+    width: 300px;
+    display: flex;
+    justify-content: center;
+  }
+  	header div.headright div.button div.left{
+  		margin-left: -20px;
+  	}
+	section#middle div.top h2{
+  	font-size: 20px;
+  	text-align: center;
+  }
+  section#middle div.top p{
+    	font-size: 13px;
+    	text-align: center;
+    	padding-bottom: 10px;
+   }
+  section#middle div.midb{
+  	width: 80%;
+  }
+}
+@media all and (max-width: 360px){
+header h1{
+		width: 50%;
+	}
+header div.headright div.button div.right{
+	display: none;
+  }
+  header div.headright div.button{
+  	width: 50%;
+  }
+  header div.headright div.button div.left img {
+    width: 100%;
+    margin-left: 100%;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
